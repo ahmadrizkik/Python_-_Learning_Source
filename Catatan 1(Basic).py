@@ -1,5 +1,5 @@
       #=========================#
-      ###==== percobaan 1 ====###
+      ###==== Catatan 1 ====###
       # introduction
       #=========================#
 
@@ -8,7 +8,7 @@ print ('Hello World')
 
 
       #=========================#
-      ###==== percobaan 2 ====###
+      ###==== Catatan 2 ====###
       # format print
       #=========================#
 
@@ -16,25 +16,13 @@ nama = 'Malika' # string
 umur = 17       # integer
 nama, umur, tempat = 'Malika', '17', 'Jakarta'
 
-print (nama + "\n" + str(umur))        # casting ke str
-print ('%s umurnya %s' %(nama, umur))  # metode %
+# casting ke str
+print (nama + "\n" + str(umur))
 
-# metode {}.format()
-# contoh 1
-print ('{1} umurnya {0}'.format(nama, umur))
-# contoh 2
-planet = "Pluto"
-pluto_mass = 1.303 * 10**22
-earth_mass = 5.9722 * 10**24
-population = 52910390.9
-# print 'Pluto weighs about 1.3e+22 kilograms (0.22% of Earth's mass).
-# It is home to 52,910,390.9 Plutonians.'
-print ("""{} weighs about {:.2} kilograms ({:.2%} of Earth's mass).
-      It is home to {:,} Plutonians.""".
-      format(planet, pluto_mass, pluto_mass/earth_mass, population))
+###==============
+###==== metode %
 
-'''
-string format
+''' string format
 %s - String (or any object with a string representation, like numbers)
 %d - Integers
 %f - Floating point numbers
@@ -43,8 +31,36 @@ fixed amount of digits to the right of the dot.
 %x/%X - Integers in hex representation (lowercase/uppercase)
   Any object which is not a string can be formatted using the %s operator
   as well. The string which returns is formatted as the string.
+'''
+# contoh 1
+print ('%s umurnya %s' %(nama, umur))
 
-string method
+# contoh 2
+data = 1
+print ('%s' % data)
+
+# contoh 3
+data = ("John", "Doe", 53.44)
+format_string = "Hello %s %s. Your current balance is $%s."
+print(format_string % data)
+
+###==============
+###==== metode {}.format()
+# contoh 1
+print ('{1} umurnya {0}'.format(nama, umur))
+
+# contoh 2
+planet = "Pluto"
+pluto_mass = 1.303 * 10**22
+earth_mass = 5.9722 * 10**24
+population = 52910390.9
+# print 'Pluto weighs about 1.3e+22 kilograms (0.22% of Earth's mass).
+#        It is home to 52,910,390.9 Plutonians.'
+print ("""{} weighs about {:.2} kilograms ({:.2%} of Earth's mass).
+      It is home to {:,} Plutonians.""".
+      format(planet, pluto_mass, pluto_mass/earth_mass, population))
+
+''' string method
 .upper()
 .lower()
 .split()
@@ -55,16 +71,8 @@ string method
 .replace
 .isdigit()
 '''
-# contoh 1
-data = 1
-print ('%s' % data)
 
-# contoh 2
-data = ("John", "Doe", 53.44)
-format_string = "Hello %s %s. Your current balance is $%s."
-print(format_string % data)
-
-# contoh 3
+# applying method
 data = "Hello world!"
 print(data[2])      # l
 print(data[-2])     # d
@@ -78,12 +86,7 @@ print(data[::-1])   # !dlrow olleH
 print(data.upper())
 print(data.lower())
 
-# contoh 4
-print("Pluto's a planet!")       # print with one quote
-print('My dog is named "Pluto"') # print with two quote
-
-# contoh 5
-# use split method
+# split method
 claim1 = 'Pluto is a planet!'
 x = claim1.split()
 print (x) # print ['Pluto', 'is', 'a', 'planet!']
@@ -92,23 +95,27 @@ claim1 = 'Pluto-is-a-planet!'
 a,b,c,d = claim1.split('-')
 print (a) # print 'Pluto'
 
-# use join method
+# join method
 claim2 = ['Pluto', 'is', 'a', 'planet!']
 y = ' 👏 '.join([word for word in claim2])
 print (y) # print 'Pluto 👏 is 👏 a 👏 planet!'
 
-# use replace method
+# replace method
 claim3 = 'Pluto is a planet!'
 claim3Underscore = claim1.replace(' ', '_')
 print (claim3Underscore) # print 'Pluto_is_a _planet!'
 
-# use isdigit method
+# isdigit method
 x = '12345678x'
 print (str.isdigit(x)) # print False
 
+# quote type
+print("Pluto's a planet!")       # print with one quote
+print('My dog is named "Pluto"') # print with two quote
+
 
       #=========================#
-      ###==== percobaan 3 ====###
+      ###==== Catatan 3 ====###
       # fungsi input
       #=========================#
 
@@ -130,7 +137,7 @@ if baik and imut:
 
 
       #=========================#
-      ###==== percobaan 4 ====###
+      ###==== Catatan 4 ====###
       # bentuk variabel
       #=========================#
 
@@ -156,7 +163,7 @@ else:
 
 
       #=========================#
-      ###==== percobaan 5 ====###
+      ###==== Catatan 5 ====###
       # boolean
       #=========================#
 
@@ -181,7 +188,7 @@ print (abs(z))
 
 
       #=========================#
-      ###==== percobaan 6 ====###
+      ###==== Catatan 6 ====###
       # fungsi while
       #=========================#
 
@@ -192,10 +199,8 @@ while x < 5:
   x = x + 1
 else:
   print ('berhenti di' , x)
-# tanda (,) bisa print dua jenis data berbeda (int dan str)
 
-# fungsi break
-# untuk berhenti saat mencapai nilai tertentu
+# fungsi break untuk berhenti saat mencapai nilai tertentu
 x = 0
 while True:
     print(x)
@@ -230,7 +235,7 @@ print (bintang)
 
 
       #=========================#
-      ###==== percobaan 7 ====###
+      ###==== Catatan 7 ====###
       # fungsi for and tuple
       #=========================#
 
@@ -279,7 +284,7 @@ print (tuple(nama2))
 
 
       #=========================#
-      ###==== percobaan 8 ====###
+      ###==== Catatan 8 ====###
       # fungsi list
       #=========================#
 
@@ -358,7 +363,7 @@ print (any([num % 7 == 0 for num in nums]))
 
 
       #=========================#
-      ###=== percobaan 9 ===####
+      ###=== Catatan 9 ===####
       # fungsi dictionary
       #=========================#
 
@@ -420,7 +425,7 @@ print (' '.join(sorted(x.values()))) # print values
 
 
       #=========================#
-      ###=== percobaan 10 ===####
+      ###=== Catatan 10 ===####
       # fungsi set
       #=========================#
 
@@ -443,7 +448,7 @@ print (angka1 ^ angka2)
 
 
       #=========================#
-      ###=== percobaan 11 ===####
+      ###=== Catatan 11 ===####
       # make own function
       #=========================#
 
@@ -581,7 +586,7 @@ print(
 
 
       #=========================#
-      ###=== percobaan 12 ===####
+      ###=== Catatan 12 ===####
       # fungsi lambda
       #=========================#
 
@@ -603,7 +608,7 @@ for i in l:
 
 
       #=========================#
-      ###=== percobaan 13 ===####
+      ###=== Catatan 13 ===####
       # args (*) dan kwargs (**)
       #=========================#
 
@@ -623,7 +628,7 @@ bio(nama = 'adel', umur = '17', hobi = 'belajar')
 
 
       #=========================#
-      ###=== percobaan 14 ===####
+      ###=== Catatan 14 ===####
       # import module
       #=========================#
 
@@ -647,7 +652,7 @@ print (x)
 
 
       #=========================#
-      ###=== percobaan 15 ===####
+      ###=== Catatan 15 ===####
       # global and local var
       #=========================#
 
@@ -663,7 +668,7 @@ print (nama)
 
 
       #=========================#
-      ###=== Percobaan 16 ===####
+      ###=== Catatan 16 ===####
       # eror method
       #=========================#
 
@@ -686,7 +691,7 @@ print ('Hello') # ini gak keprint
 
 
       #=========================#
-      ###=== Percobaan 17 ===####
+      ###=== Catatan 17 ===####
       # compile
       #=========================#
 '''
