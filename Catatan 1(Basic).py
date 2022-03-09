@@ -138,7 +138,7 @@ if baik and imut:
 
       #=========================#
       ###==== Catatan 4 ====###
-      # bentuk variabel
+      # bentuk variabel dan if
       #=========================#
 
 # integer (int), float (float), string(str)
@@ -254,7 +254,7 @@ for x in nama:
 for x in nama1:
   print (nama)
 
-# fungsi continue
+# fungsi continue to skip command
 for x in range(10):
     if x % 2 == 0:
         continue
@@ -271,6 +271,9 @@ s = 'steganograpHy is the practicE of conceaLing a fiLe Or video.'
 for char in s:
     if char.isupper():      # use isupper
         print(char, end='') # HELLO
+
+###==============
+###==== Tuple
 
 # tuple () mirip list bedanya dia immutable (gabisa pake method)
 nama1 = ('Ale', 'Bidi', 'Coki')
@@ -316,11 +319,13 @@ nama = [['Ani', 'Budi', 'Cika'],
 x = nama[1][0]  # acces method
 print (x)       # andi
 
-# comprehension list
+###==============
+###==== comprehension list
+
 # exaCompreList 1 (print length word except 'the')
 sentence = "the quick brown fox jumps over the lazy dog"
 words = sentence.split()
-# comprehen with just one code
+  # comprehen with just one code
 word_lengths = [len(word) for word in words if word != "the"]
 print(word_lengths)
 
@@ -346,9 +351,9 @@ for num in nums:
     if num < 0:
         n_negative = n_negative + 1
 print (n_negative)
-# can be comprehen into this
+  # can be comprehen into this
 print (len([num for num in nums if num < 0]))
-# or into this
+  # or into this
 print (sum([num < 0 for num in nums]))
 
 # exaCompreList 6 (check lucky number in list (luckNumb = 7))
@@ -358,7 +363,7 @@ for num in nums:
         print (True)
     else:
         continue
-# comprehen into this
+  # comprehen into this
 print (any([num % 7 == 0 for num in nums]))
 
 
@@ -386,7 +391,7 @@ print (data)
 # satu data tpi data selanjutnya dikasih []
 for x, y in data.items():
   print (x, ":", y)
-# atau ini
+  # atau ini
 for x in data:
   print (x, ":", data[x])
 
@@ -411,14 +416,15 @@ for x, y in data.items():
   for x1, y1 in y.items():
     print (x1, ' : ', y1)
 
-# comprehension dict
+###==============
+###==== comprehension dict
 # contoh 1
 planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune']
 x = {}
 for planet1 in planets:
     x[planet1] = planet1[0]
 print (x)
-# can comprehen into this
+  # can comprehen into this
 y = {planet: planet[0] for planet in planets}
 print (y)
 print (' '.join(sorted(x.values()))) # print values
@@ -452,7 +458,8 @@ print (angka1 ^ angka2)
       # make own function
       #=========================#
 
-# function bisa tanpa argumen
+###==============
+###==== function bisa tanpa argumen
 # contoh 1
 def nilai():
   print ()
@@ -464,7 +471,8 @@ def commaValue():
     return '{:,}'.format(value) # to give comma in result
 print (commaValue())            # 123,456.789
 
-# function dengan argumen
+###==============
+###==== function dengan argumen
 # contoh 1
 def nilai(text):
   print (text)
@@ -501,19 +509,21 @@ def is_valid_zip(zip_code):
         return str.isdigit(zip_code)
     else:
         return False
-# can comprehen into
+  # can comprehen into
 def is_valid_zip2(zip_code):
     return len(zip_code) == 5 and zip_code.isdigit()
 print (is_valid_zip('12345')) # must true
 print (is_valid_zip('1234x')) # must false
 print (is_valid_zip('1234')) # must false
 
-# function default
+###==============
+###==== function default
 def nilai (text = 0):
   print (text)
 nilai() #keluar 0
 
-# function >1 argumen
+###==============
+###==== function >1 argumen
 # contoh 1
 def nilai (a, b, c):
   print ('Kalau', a, 'ditambah', b, 'jadinya', c)
@@ -526,7 +536,7 @@ def x(nama, umur, hobi):
            "Hobi: " + hobi
           )
 x('17\n', 'isan\n', 'masak')
-# di print berurut dari nama
+  # di print berurut dari nama
 x(umur = '17\n', nama = 'isan\n', hobi = 'masak')
 
 # contoh 3
@@ -567,7 +577,8 @@ def multiWordSearch(doc, keyword):
     return count
 print (multiWordSearch(list1, key[0]))
 
-# higher-order function (fungsi didalam fungsi)
+###==============
+###==== higher-order function (fungsi didalam fungsi)
 def mult_by_five(x):
     return 5 * x
 def call(fn, arg):
