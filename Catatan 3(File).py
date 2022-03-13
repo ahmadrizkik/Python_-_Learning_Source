@@ -101,3 +101,16 @@ def text():
         print ('namanya ' + file['name'] +
          ', punya skill ' + file['skill'])
 text()
+
+
+      #=========================#
+      ####==== Catatan 4 ====####
+      # jupyter notebook
+      #=========================#
+
+'''
+first change directory location to open notebook
+open jupyter notebook in terminal with command
+py -m jupyterlab    = open jupyterlab
+py -m notebook      = open jupyter notebook
+'''
