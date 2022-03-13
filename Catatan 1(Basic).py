@@ -62,18 +62,19 @@ print ("""{} weighs about {:.2} kilograms ({:.2%} of Earth's mass).
       format(planet, pluto_mass, pluto_mass/earth_mass, population))
 
 ''' string method
-.upper()
-.lower()
-.split()
-.join()
-.index()
-.startswith()
+.abs()
 .endswith()
-.replace
+.index()
 .isdigit()
+.join()
+.lower()
+.replace
+.split()
+.startswith()
+.upper()
 '''
 
-# applying method
+# slicing variable
 data = "Hello world!"
 print(data[2])      # l
 print(data[-2])     # d
@@ -81,11 +82,9 @@ print(data[2:8])    # llo wo
 print(data[:8])     # Hello wo
 print(data[:-2])    # Hello worl
 print(data[-2:])    # d!
-print(data[1:10:3]) #eoo
-                    # [0:12:4]same as [::4])
+print(data[1:10:3]) # eoo 
+print(data[0:12:4]) # [0:12:4] same as [::4])
 print(data[::-1])   # !dlrow olleH
-print(data.upper())
-print(data.lower())
 
 # split method
 claim1 = 'Pluto is a planet!'
@@ -104,7 +103,7 @@ print (y) # print 'Pluto 👏 is 👏 a 👏 planet!'
 # replace method
 claim3 = 'Pluto is a planet!'
 claim3Underscore = claim1.replace(' ', '_')
-print (claim3Underscore) # print 'Pluto_is_a _planet!'
+print (claim3Underscore) # print 'Pluto_is_a_planet!'
 
 # isdigit method
 x = '12345678x'
@@ -129,7 +128,7 @@ print ("Salam kenal ya " + nama + " diumur kamu yang ke " + umur)
 baik = True
 imut = True
 tipe = 'wanita'
-# if bisa dibuat bercabang
+# if can make into branch
 if baik and imut:
   if tipe == input(''):
     print ("Gas")
@@ -139,11 +138,11 @@ if baik and imut:
 
       #=========================#
       ###==== Catatan 4 ====###
-      # bentuk variabel dan if
+      # variabel type and if
       #=========================#
 
-# integer (int), float (float), string(str)
-# boolean (bool), complex (complex)
+# vartype
+# integer(int), float(float), string(str), boolean(bool), complex(complex)
 
 print ("a: eh bayar utanglu sini.")
 print ("b: ywdh nih gw bayar.")
@@ -168,6 +167,7 @@ else:
       # boolean
       #=========================#
 
+# boolean operator
 # ==, !=, >, <, >=, <=
 # and = & (kalau keduanya true)
 # or = | (kalau salah satunya true)
@@ -183,9 +183,6 @@ if x > y or x < y:
 
 if not x < y:
   print ('iya itu tidak benar')
-
-# abs to make absolut number
-print (abs(z))
 
 
       #=========================#
@@ -602,7 +599,7 @@ print(
       # fungsi lambda
       #=========================#
 
-# lambda is anonym func
+# lambda same like func
 def add(x,y):
   return x + y
 x = add(1,2)
@@ -681,7 +678,7 @@ print (nama)
 
       #=========================#
       ###=== Catatan 16 ===####
-      # eror method
+      # error method
       #=========================#
 
 # metode raise exception

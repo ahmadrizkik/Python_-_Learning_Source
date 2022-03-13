@@ -1,7 +1,4 @@
-exampleText = 'to. Test back. in, back for\' the test in back.'
+import re
 
-splitToWord = exampleText.split()
-normalizedWord = []
-for x in splitToWord:
-    normalizedWord.append(x.rstrip('.,\'').lower())
-print (normalizedWord)
+for value in dir(re):
+    print (value)
