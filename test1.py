@@ -1,30 +1,15 @@
 import pandas as pd
-import numpy as np
 
-dict = {'col1': [1, 2, 3, 4, 7],
-     'col2': [4, 5, 6, 9, 5],
-     'col3': [7, 8, 12, 1, 11]}
+x = pd.read_csv('test3.csv', header=0, sep=',')
+x.dropna(axis=0, inplace=True)
+y = pd.DataFrame(x)
 
-# convert into pandas dataframe
-df = pd.DataFrame(data=dict)
+# print (y[0:6])
 
-# count column
-count_column = df.shape[1]  # have to use 1
-print(count_column)
+x['Duration'] = x['Duration'].astype(float)
+x['Pulse'] = x['Pulse'].astype(float)
+x['Maxpulse'] = x['Maxpulse'].astype(float)
 
-# count row
-count_row = df.shape[0]     # have to use 0
-print(count_row)
+# print (y.info())
 
-# min method
-Average_pulse_min = min(80, 85, 90, 95, 100, 105, 110, 115, 120, 125)
-print (Average_pulse_min)
-
-# max method
-Average_pulse_max = max(80, 85, 90, 95, 100, 105, 110, 115, 120, 125)
-print (Average_pulse_max)
-
-# mean (average) method
-Calorie_burnage = [240, 250, 260, 270, 280, 290, 300, 310, 320, 330]
-Average_calorie_burnage = np.mean(Calorie_burnage)
-print(Average_calorie_burnage)
+print (y.describe())

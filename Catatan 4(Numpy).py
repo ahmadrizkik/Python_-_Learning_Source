@@ -35,3 +35,8 @@ nama = [['Ani', 'Budi', 'Cika'],
         ['Andi', 'Bina', 'Cita']]
 nama1 = np.array(nama)
 print (nama1[1,0])
+
+# search mean (average) method
+Calorie_burnage = [240, 250, 260, 270, 280, 290, 300, 310, 320, 330]
+Average_calorie_burnage = np.mean(Calorie_burnage)
+print(Average_calorie_burnage)
