@@ -43,7 +43,20 @@ print(count_row)
 
 x = pd.read_csv('test3.csv', header=0, sep=',')
 y = pd.DataFrame(x)
-print (y[0:6])
 
 # clean data from null values and non numeric
 x.dropna(axis=0, inplace=True)   # use .dropna()
+
+# read slicing
+print (y[0:6])
+
+# change data type in table
+x['Duration'] = x['Duration'].astype(float)
+x['Pulse'] = x['Pulse'].astype(float)
+x['Maxpulse'] = x['Maxpulse'].astype(float)
+
+# data type in table
+print (y.info())
+
+# count aggregat
+print (y.describe())
