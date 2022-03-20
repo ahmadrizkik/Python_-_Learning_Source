@@ -323,7 +323,12 @@ print (x)       # andi
 # exaCompreList 1 (print length word except 'the')
 sentence = "the quick brown fox jumps over the lazy dog"
 words = sentence.split()
-  # comprehen with just one code
+# basic code
+word_lengths = []
+for word in words:
+  if word != "the":
+    word_lengths.append (len(word))
+# comprehen with just one code
 word_lengths = [len(word) for word in words if word != "the"]
 print(word_lengths)
 
