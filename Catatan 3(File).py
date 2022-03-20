@@ -1,5 +1,29 @@
       #=========================#
       ####==== Catatan 1 ====####
+      # import lib
+      #=========================#
+
+# import lib dari file (import nama_module as n_m)
+# atau spesifik fungsi (from nama_module import fungsi_module)
+# nama_module.fungsi_module / fungsi_module buat di penamaan
+
+# import dari build in module datetime
+import datetime
+
+now = datetime.datetime.now()
+date = datetime.datetime(2001, 2, 16)
+
+print (now)
+print (date)
+print (now.strftime('%d %B %Y')) # format tanggal
+
+# cek func di module
+x = dir(datetime)
+print (x)
+
+
+      #=========================#
+      ####==== Catatan 2 ====####
       # txt
       #=========================#
 
@@ -26,7 +50,7 @@ print (data)
 
 
       #=========================#
-      ####==== Catatan 2 ====####
+      ####==== Catatan 3 ====####
       # csv
       #=========================#
 
@@ -76,7 +100,7 @@ with open('test2.csv', 'a') as csvfile:
 
 
       #=========================#
-      ####==== Catatan 3 ====####
+      ####==== Catatan 4 ====####
       # json
       #=========================#
 
@@ -104,7 +128,7 @@ text()
 
 
       #=========================#
-      ####==== Catatan 4 ====####
+      ####==== Catatan 5 ====####
       # jupyter notebook
       #=========================#
 

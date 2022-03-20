@@ -72,6 +72,7 @@ print ("""{} weighs about {:.2} kilograms ({:.2%} of Earth's mass).
 .split()
 .startswith()
 .upper()
+.count()
 '''
 
 # slicing variable
@@ -142,7 +143,8 @@ if baik and imut:
       #=========================#
 
 # vartype
-# integer(int), float(float), string(str), boolean(bool), complex(complex)
+# integer(int), float(float), string(str)
+# boolean(bool), complex(complex)
 
 print ("a: eh bayar utanglu sini.")
 print ("b: ywdh nih gw bayar.")
@@ -305,6 +307,7 @@ nama[0] = 'Akel'      # ganti
 del nama[1]           # hapus metode 1
 nama.pop(1)           # hapus metode 2
 nama.index('Budi')    # akses index
+nama.count('Budi')    # how much budi data
 len(nama)             # jumlah data di  list
 sorted(nama)          # urutin list
 sum(angka)            # total list
@@ -643,30 +646,6 @@ bio(nama = 'adel', umur = '17', hobi = 'belajar')
 
       #=========================#
       ###=== Catatan 14 ===####
-      # import module
-      #=========================#
-
-# import module dari file (import nama_module as n_m)
-# atau spesifik fungsi (from nama_module import fungsi_module)
-# nama_module.fungsi_module / fungsi_module buat di penamaan
-
-# import dari build in module datetime
-import datetime
-
-now = datetime.datetime.now()
-date = datetime.datetime(2001, 2, 16)
-
-print (now)
-print (date)
-print (now.strftime('%d %B %Y')) # format tanggal
-
-# cek func di module
-x = dir(datetime)
-print (x)
-
-
-      #=========================#
-      ###=== Catatan 15 ===####
       # global and local var
       #=========================#
 
@@ -682,7 +661,7 @@ print (nama)
 
 
       #=========================#
-      ###=== Catatan 16 ===####
+      ###=== Catatan 15 ===####
       # error method
       #=========================#
 
@@ -705,7 +684,7 @@ print ('Hello') # ini gak keprint
 
 
       #=========================#
-      ###=== Catatan 17 ===####
+      ###=== Catatan 16 ===####
       # compile
       #=========================#
 '''
