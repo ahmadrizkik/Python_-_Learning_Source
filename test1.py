@@ -1,3 +1,1 @@
-from math import radians
-
-help(radians)
+print ("Hello World!")
